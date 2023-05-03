@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LIsta2Ex6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double P;
+            double h;
+            double IMC;
+
+            Console.Write("Peso da pessoa: ");
+            P = double.Parse(Console.ReadLine());
+
+            Console.Write("altura da pessoa: ");
+            h = double.Parse(Console.ReadLine());
+
+            IMC = P / (Math.Pow(h,2));
+
+            if (IMC < 20)
+                Console.WriteLine("Abaixo do peso ideal.");
+            else
+                    if (IMC < 25)
+                    Console.WriteLine("Peso ideal");
+                    else
+                    Console.WriteLine("Acima do peso ideal");
+            {
+
+            }
+            {          
+
+                           
+
+            }
+        }
+    }
+}
